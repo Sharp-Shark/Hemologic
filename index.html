@@ -36,7 +36,7 @@
 		};
 		function changeGame () {
 			document.getElementById('info').innerHTML = id_info[document.getElementById('selectedVersion').value];
-			document.getElementById('frame').src = 'projects/' + id_path[document.getElementById('selectedVersion').value];
+			document.getElementById('frame').src = id_path[document.getElementById('selectedVersion').value];
 		};
 		function openGame () {
 			window.open('projects/' + id_path[document.getElementById('selectedVersion').value]);
