@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hemologic & Canvas Framework</title>
+	<link href="style.css" rel="stylesheet"/>
+<body>
+	<center>
+		Projetos: 
+		<select id='selectedVersion' onchange='changeGame();' selected='v1.0'>
+			<option value='hemologicPTBR'>Hemologic PTBR</option>
+			<option value='hemologicENG'>Hemologic ENG</option>
+			<option value='canvasFrameworkPTBR'>Canvas Framework PTBR</option>
+			<option value='canvasFrameworkENG'>Canvas Framework ENG</option>
+		</select><br>
+		Click <b onclick='openGame();' style='color: white;'>aqui</b> para abrir numa janela dedicada.<br>
+		<hr>
+		<iframe id='frame' src=''></iframe>
+		<p id='info'></p>
+		<hr>
+		Por <a target='_blank' href='https://github.com/Sharp-Shark'>Sharp-Shark</a> (Luiz Arthur B.M.C.)
+	</center>
+	<script>
+		let id_info = {
+			'hemologicPTBR': 'Pressione [H] para Ajuda.',
+			'hemologicENG': 'Press [H] for Help',
+			'canvasFrameworkPTBR': '[W][A][S][D] para Movimento da Câmera ou Objeto Vermelho.<br>[Z] e [X] para Zoom In/Out.<br>[Q] e [E] para Rotação Horário/Anti-Horário.<br>[C] para Criar Objeto.<br>[V] para Destruir Objeto.<br>[T] para Teleportar Objeto Vermelho.<br>[Espaço] para Controlar Objeto Vermelho.<br>[B] para Mostrar Quadtree.<br>[P] para Abilitar/Desabilitar Quadtree.<br>[F] para Abilitar/Desabilitar Culling.',
+			'canvasFrameworkENG': '[W][A][S][D] to Move Camera or Red Object.<br>[Z] and [X] to Zoom In/Out.<br>[Q] and [E] for Clockwise/Counter-Clockwise Rotation.<br>[C] to Create Object.<br>[V] to Destroy Object.<br>[T] to Teleport Red Object.<br>[Space] to Control Red Object.<br>[B] to Show Quadtrees.<br>[P] to Toggle Quadtrees.<br>[F] to Toggle Culling.',
+		};
+		let id_path = {
+			'hemologicPTBR': 'Hemologic/HemologicPTBR/index.html',
+			'hemologicENG': 'Hemologic/index.html',
+			'canvasFrameworkPTBR': 'Canvas Framework/index.html',
+			'canvasFrameworkENG': 'Canvas Framework/index.html',
+		};
+		function changeGame () {
+			document.getElementById('info').innerHTML = id_info[document.getElementById('selectedVersion').value];
+			document.getElementById('frame').src = 'projects/' + id_path[document.getElementById('selectedVersion').value];
+		};
+		function openGame () {
+			window.open('projects/' + id_path[document.getElementById('selectedVersion').value]);
+		};
+
+		changeGame();
+	</script>
+</body>
+
+</html>
