@@ -1,0 +1,114 @@
+body {
+	background-color: #1c2833;
+	color: #abb2b9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+select {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 2px;
+	margin-bottom: 4px;
+	padding: 4px;
+	font-size: 100%;
+}
+
+select:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0s linear;
+}
+
+big {
+	font-size: 250%;
+	font-weight: bolder;
+}
+
+input {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 4px;
+	margin-bottom: 4px;
+	font-size: 100%;
+	width: 600px;
+	max-width: 80%;
+}
+
+input[type=text] {
+	color: white;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 4px;
+	margin-bottom: 4px;
+	font-size: 100%;
+	width: 600px;
+	max-width: 80%;
+}
+
+input[type=checkbox] {
+	height: 20px;
+	width: 20px;
+}
+
+input:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0s linear;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 4px;
+	font-size: 100%;
+	transition: background-color 0.2s, color 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0s linear;
+}
+
+a {
+	color: skyblue;
+	font-size: 100%;
+	text-decoration:underline;
+	text-decoration-thickness: 2px;
+	font-weight: normal;
+	border-radius: 5px;
+	padding: 2px;
+	line-height: 120%;
+}
+
+a:visited {
+	color: lightblue;
+}
+
+a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	transition: all 0s linear;
+}
+
+.border {
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 5px;
+	margin: 0px 10px 0px 2px;
+	height: auto;
+}
+
+#frame {
+	width: calc(480px * 2);
+	height: calc(360px * 2);
+}
